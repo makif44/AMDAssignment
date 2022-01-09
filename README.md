@@ -1,6 +1,6 @@
 # RestAssured Cucumber
 
-This test suite is a debuggable BDD Javascript test automation framework. Built on WebdriverIO v7 and Cucumber v7 with page object model.
+This test suite is a  BDD Java test automation framework. Built on RestAssured Library and Cucumber.
 
 ## Prerequisites
 
@@ -9,14 +9,18 @@ To use this project, you'll need:
 - Maven
 
 
-### Installation and Run
+### Execution
 ```
-mvn verify
+mvn test
 ```
-### Report used
+```
+run the "src/test/com/AMD/runners/CukesRuner.java" class
+```
+### Folder structure
 
-`maven-cucumber-reporting`
-- report location : target/cucumber-html-reports/
+- features - This folder contains all `.feature` files with test steps
+- stepDefinitions - This folder contains the required implementation files
+- runners - This folder contains the runner class
 
 ### Some Explanations
 

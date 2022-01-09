@@ -45,3 +45,6 @@ mvn test
   "from": "Routee",
   "to": ["+306982563221"]
 }
+
+c) I also added postman collection for manuel API testing. File location: 
+- AMD Assignment Collections.postman_collection.json

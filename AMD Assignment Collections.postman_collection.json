@@ -1,0 +1,91 @@
+{
+	"info": {
+		"_postman_id": "d5a5070f-2139-49c4-9cdb-9e204761dad9",
+		"name": "AMD Assignment Collections",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get access token",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "create contact",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{token}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"Nick\",\r\n    \"lastName\": \"Davis\",\r\n    \"mobile\": \"+306984512555\",\r\n    \"country\": \"gr\",\r\n    \"vip\": false\r\n}"
+				},
+				"url": {
+					"raw": "https://connect.routee.net/contacts/my",
+					"protocol": "https",
+					"host": [
+						"connect",
+						"routee",
+						"net"
+					],
+					"path": [
+						"contacts",
+						"my"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Analyze an SMS campaign",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{token}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"body\": \"Service 003 is offline\",\r\n  \"groups\" : [ \"Admins\" ],\r\n  \"from\": \"Routee\",\r\n  \"to\": [\"+306970241286\"]\r\n}"
+				},
+				"url": {
+					"raw": "https://connect.routee.net/sms/analyze/campaign",
+					"protocol": "https",
+					"host": [
+						"connect",
+						"routee",
+						"net"
+					],
+					"path": [
+						"sms",
+						"analyze",
+						"campaign"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

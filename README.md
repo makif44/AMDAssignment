@@ -1,6 +1,6 @@
-# RestAssured Cucumber
+# RestAssured & Cucumber
 
-This test suite is a  BDD Java test automation framework. Built on RestAssured Library and Cucumber.
+This test suite is a  BDD, DDT Java test automation framework. Built on RestAssured Library and Cucumber.
 
 ## Prerequisites
 
@@ -10,11 +10,12 @@ To use this project, you'll need:
 
 
 ### Execution
-```
-mvn test
-```
+
 ```
 run the "src/test/com/AMD/runners/CukesRuner.java" class
+```
+```
+mvn test
 ```
 ### Folder structure
 
